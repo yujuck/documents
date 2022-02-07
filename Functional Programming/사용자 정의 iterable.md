@@ -51,7 +51,7 @@ const iterable = {
             next() {
                 return i == 0 ? {done : true} : { value: i--, done: false }
             },
-						[Symbol.iterator]() { return this; }  // 이 때는 자기 자신을 리턴함
+	    [Symbol.iterator]() { return this; }  // 이 때는 자기 자신을 리턴함
         }       
     }
 }
@@ -76,7 +76,7 @@ const iterable = {
             next() {
                 return i == 0 ? {done : true} : { value: i--, done: false }
             },
-						[Symbol.iterator]() { return this; }
+	    [Symbol.iterator]() { return this; }
         }       
     }
 }
