@@ -1,4 +1,4 @@
-### map 함수 만들기
+### 이터러블 프로토콜을 따르는 map 함수 만들기
 
 ```jsx
 const products = [
