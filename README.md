@@ -7,6 +7,6 @@
 
 ### [함수형 프로그래밍](/Functional%20Programming)
 
-### [Javascript](/Javascript)
+### [Javascript](/Javascript/Javascript.md)
 
 ### [Docker](/Docker)
