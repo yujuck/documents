@@ -1,0 +1,28 @@
+회사에서 pm2로 프로세스를 관리하고 있지만 pm2의 공식 홈페이지를 자세하게 본 적은 없었던 것 같다.<br />
+단순히 pm2는 `애플리케이션을 중단시키지 않고 배포시킬 수 있게 해주는 프로세스 매니저!` 로 알고 있긴 한데, <br />
+사실 맞는 말이긴 해서..
+
+그래도 이번에 deploy 패키지 만드는 과정 중에 pm2 설치 역할을 맡은 김에<br />
+pm2에 대해서 좀 더 알아볼 겸 공홈 들어가서 설명 좀 읽어보았다.
+
+# PM2 정의
+공식 홈페이지에서는 pm2와 pm2를 시작하는 것에 대해 이렇게 말하고 있다.
+
+```
+PM2 is a daemon process manager that will help you manage and keep your application online. 
+Getting started with PM2 is straightforward, it is offered as a simple and intuitive CLI, installable via NPM.
+
+pm2는 Node.js application을 online으로 관리하고 유지하는 데 도움을 주는 프로세스 관리자이다.pm2를 시작하는 것은 간단하고 npm을 통해 설치할 수 있는, 간단하고 직관적인 CLI로 제공된다.
+```
+
+pm2에 대한 설명은 사실 별거 없다..<br />
+정의에 대해서는 이정도만 알고 있으면 될 것 같고 <br />
+알아야 할 것들, 공식에서 알려주고 있는 내용들 모두 pm2에서 제공하고 있는 기능에 대한 얘기이다.
+
+지금 찾아야 하는 내용은<br />
+nvm을 사용해서 node를 버전별로 관리한다 하더라도 특정 node 버전에 pm2를 설치하는 것이 아닌<br />
+OS 레벨에 설치할 수 있는지를 찾아봐야 한다.<br />
+근데 그게 가능한가..??
+npm 으로 설치하는데 .. 
+
+
