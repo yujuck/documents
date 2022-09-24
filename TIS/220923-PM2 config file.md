@@ -97,7 +97,17 @@ json 애플리케이션을 사용할 때 커맨드 라인에 전달된 모든 �
 <br />
 
 ### CWD
-cwd: your JSON declaration does not need to reside with your script. If you wish to maintain the JSON(s) in a location other than your script (say, /etc/pm2/conf.d/node-app.json) you will need to use the cwd feature (Note, this can be really helpful for capistrano style directory structures that uses symlinks). Files can be either relative to the cwd directory, or absolute (see example below).
+설정 파일은 스크립트와 함께 있을 필요는 없다.<br />
+다른 위치에 (ex. /etc/pm2/conf.d/node-app.json) 두려면 cwd 기능을 사용해야 한다.<br />
+(심볼릭 링크를 사용하는 capistrano 스타일 디렉토리 구조에 유용하다.)<br />
+파일은 cwd 디렉토리에 상대적이거나 절대적일 수 있다.<br />
 
-오 뭔가 이부분은 좀 더 내일 보는걸로..
-여행 와서 하는건 아무래도 매우 귀찮구만
+흐잉 이거 무슨 말인지 모르겠엉..<br />
+
+** Capistrano
+여러 서버에서 스크립트를 실행하기 위한 오픈 소스 도구.<br />
+주요 용도는 웹 응용 프로그램 배포이다.<br />
+데이터베이스 변경과 같은 지원 작업을 포함하여 하나 이상의 웹 서버에서 사용 가능한 새 버전의 응용 프로그램을 만드는 프로세스를 자동화한다.
+
+capistrano 검색하면 이거만 나오는데 이거 말하는거 맞나..?
+cwd 기능은 뭐여,,
