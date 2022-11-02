@@ -32,7 +32,7 @@ sudo su -c "env PATH=$PATH:/home/unitech/.nvm/versions/node/v14.3/bin pm2 startu
 startup 스크립트가 잘 등록되었는지 확인할 수 있는 방법은 서버를 reboot 시킨 후 다시 들어갔을 때 process가 있는지를 확인해보면 된다.<br />
 `sudo reboot` 하면 리부팅할 수 있고,<br />
 다시 들어가서 `pm2 ls`를 했을 때, startup 스크립트가 동작했으면 process들이 그대로 있고 startup 스크립트가 없으면 아무것도 나오지 않는다.<br />
-지금 약간 헷갈리는게 테스트할 때 startup을 제대로 안해놨으면 reboot 시에 없어지는거랑 제대로 했으면 남아있는걸 확인하긴 했는데<br .>
+지금 약간 헷갈리는게 테스트할 때 startup을 제대로 안해놨으면 reboot 시에 없어지는거랑 제대로 했으면 남아있는걸 확인하긴 했는데<br />
 `제대로 안했을 때`가 systemctl start를 안해서 인지(inactive 상태) 아니면 아예 커맨드를 복사해서 실행을 안해서였는지가 기억이 안난다ㅠㅠ<br />
 너무 이렇게 저렇게 해서.. 그런 듯.. 이거는 내일 다시 해보지 뭐..!
 
@@ -44,3 +44,10 @@ save 한 내용을 다시 가져올 때는 `resurrect` 커맨드를 사용해야
 뭔가.. 실수로 프로세스를 지웠을 때 사용하려나..?
 
 리부팅 이후에는 어차피 원래 저장되어있던 프로세스를 가져오는거니까 필요없을 것 같긴 한데 맞는진 모르겠음..
+
+
+==========================
+
+11/2 내용 확인
+1. startup 하고 출력된 커맨드를 실행하면 inactive 상태가 맞는데 굳이 `systemctl status <service name>.service`를 실행하지 않아도 reboot하면 프로세스 살아있고 status를 확인해봐도 active로 바뀌어있다. 등록만 하면 될 듯!
+2. unstartup을 하고 나면 관리하고 있던 프로세스가 아예 다 사라져버린다.. 이럴 때 `pm2 resurrect` 쓰나봄.. resurrect 커맨드로 다시 살려놨다.
